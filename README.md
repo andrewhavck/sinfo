@@ -1,8 +1,17 @@
 # `sinfo`
 
-A thin wrapper around the [javasysmon library](https://github.com/jezhumble/javasysmon.com) that provides information about the system the application is running on. You will need to download the [jar](http://continuousdelivery.com/downloads/javasysmon/javasysmon-0.3.4.jar) and install it locally via Maven in order to use this library.
+A thin wrapper around the [javasysmon library](https://github.com/jezhumble/javasysmon.com) that provides information about the system the application is running on. 
 
 ## Usage
+
+You will need to download the [jar](http://continuousdelivery.com/downloads/javasysmon/javasysmon-0.3.4.jar) and install it locally via Maven in order to use this library.
+
+```bash
+>mkdir repo
+>mvn install:install-file -DgroupId=local -DartifactId=javasysmon \
+    -Dversion=0.3.4 -Dpackaging=jar -Dfile=javasysmon-0.3.4.jar \
+    -DlocalRepositoryPath=repo
+```
 
 ```clojure
 [sinfo "0.1.0"]
