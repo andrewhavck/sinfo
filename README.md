@@ -27,6 +27,27 @@ true
 {:free 2379927552, :total 8589934592}
 > (swap)
 {:free 1073741824, :total 1073741824}
+```
+
+Ability to kill processes
+
+```clojure
 > (kill 5981)
 nil
 ```
+
+Kills the process tree inclusively beginning at pid
+
+```clojure
+>(kill-tree 5981 true) 
+nil
+```
+
+Kills all descendents of the currently running process
+
+```clojure
+>(infanticide) 
+nil
+```
+
+
