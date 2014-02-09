@@ -67,7 +67,7 @@
 
 (defn physical [] (mem-stats (.physical (JavaSysMon.))))
 
-(defn kill [pid] (.killProcess pid (JavaSysMon.)))
+(defn kill [pid] (.killProcess (JavaSysMon.) pid))
 
 (defn processes []
   (let [procs (seq (.processTable (JavaSysMon.)))
