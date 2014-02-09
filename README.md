@@ -8,37 +8,30 @@ A thin wrapper around a [Java system library](https://github.com/jezhumble/javas
 [sinfo "0.1.0"]
 ```
 
-Check if the platform is supported.
+Various functions
 
 ```clojure
 > (supported?)
 true
-```
 
-OS Info
-
-```clojure
 > (os-name?)
 "Mac OS X 10.9.1"
-```
 
-Number of cpus
-
-```clojure
 > (num-cpus)
 4
-```
 
-Cpu frequency in Hz
-
-```clojure
 > (cpu-freq-hz)
 2900000000
-```
 
-Uptime in seconds
-
-```clojure
 > (uptime-sec)
 515895
+
+> (curr-pid)
+22376
+
+> (physical)
+{:free 2379927552, :total 8589934592}
+
+> (swap)
+{:free 1073741824, :total 1073741824}
 ```
