@@ -1,6 +1,6 @@
 # `sinfo`
 
-A thin wrapper around a [Java system library](https://github.com/jezhumble/javasysmon.com) that provides information about the system the application is running on. You will need to download the [jar](http://continuousdelivery.com/downloads/javasysmon/javasysmon-0.3.4.jar)
+A thin wrapper around the [javasysmon library](https://github.com/jezhumble/javasysmon.com) that provides information about the system the application is running on. You will need to download the [jar](http://continuousdelivery.com/downloads/javasysmon/javasysmon-0.3.4.jar)
 
 ## Usage
 
