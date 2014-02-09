@@ -7,8 +7,8 @@ A thin wrapper around the [javasysmon library](https://github.com/jezhumble/java
 You will need to download the [jar](http://continuousdelivery.com/downloads/javasysmon/javasysmon-0.3.4.jar) and install it locally via Maven in order to use this library.
 
 ```bash
->mkdir repo
->mvn install:install-file -DgroupId=local -DartifactId=javasysmon \
+> mkdir repo
+> mvn install:install-file -DgroupId=local -DartifactId=javasysmon \
     -Dversion=0.3.4 -Dpackaging=jar -Dfile=javasysmon-0.3.4.jar \
     -DlocalRepositoryPath=repo
 ```
