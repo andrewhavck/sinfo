@@ -48,20 +48,20 @@ nil
 Kills the process tree inclusively beginning at pid
 
 ```clojure
->(kill-tree 5981 true) 
+> (kill-tree 5981 true) 
 nil
 ```
 
 Kills all descendents of the currently running process
 
 ```clojure
->(infanticide) 
+> (infanticide) 
 nil
 ```
 
 Returns a list of all the processes that are currently running
 
 ```clojure
->(processes)
+> (processes)
 (#sinfo.core.Proc{:name "", :command "", :owner "", :parent , :pid , :physical-bytes , :total-bytes , :user-ms , :kernel-ms , :host ""})
 ```
